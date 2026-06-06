@@ -1,0 +1,124 @@
+body{
+    margin:0;
+    background:#0f172a;
+    color:white;
+    font-family:'Segoe UI',sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+}
+
+.container{
+    text-align:center;
+    width:90%;
+    max-width:1200px;
+}
+
+h1{
+    margin-bottom:20px;
+    font-size:42px;
+}
+
+video{
+    width:700px;
+    max-width:100%;
+
+    border-radius:20px;
+
+    border:4px solid #38bdf8;
+
+    box-shadow:0 0 25px rgba(56,189,248,.4);
+}
+
+#emotion-card{
+
+    width:450px;
+    max-width:90%;
+
+    margin:25px auto;
+
+    background:#1e293b;
+
+    padding:25px;
+
+    border-radius:20px;
+}
+
+#emoji{
+    font-size:70px;
+}
+
+.section-label{
+    margin-top:10px;
+    color:#94a3b8;
+}
+
+#emotion{
+    font-size:34px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+#confidence{
+    margin-top:10px;
+}
+
+.progress-container{
+    width:100%;
+    height:14px;
+
+    background:#334155;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-top:15px;
+}
+
+#progress-bar{
+    width:0%;
+    height:100%;
+    background:#22c55e;
+    transition:.5s;
+}
+
+.dashboard{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    width:320px;
+
+    background:#1e293b;
+
+    padding:25px;
+
+    border-radius:20px;
+}
+
+.metric-title{
+    margin-top:18px;
+    color:#94a3b8;
+}
+
+#dominant-mood,
+#stability,
+#count,
+#timestamp{
+    margin-top:5px;
+    font-size:20px;
+    font-weight:bold;
+}
+.subtitle{
+    margin-top:-10px;
+    margin-bottom:20px;
+    color:#94a3b8;
+    font-size:18px;
+}

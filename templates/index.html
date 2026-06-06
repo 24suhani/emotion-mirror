@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Mirror</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Emotion Mirror</h1>
+
+    <video id="video" autoplay></video>
+
+    <div id="emotion-card">
+
+        <div id="emoji">😐</div>
+
+        <div class="section-label">
+            Current Emotion
+        </div>
+
+        <div id="emotion">
+            Waiting...
+        </div>
+
+        <div id="confidence">
+            Confidence: --
+        </div>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+    </div>
+
+    <div class="dashboard">
+
+        <div class="card">
+
+            <h2>📊 Emotional Insights</h2>
+
+            <div class="metric-title">
+                Dominant Mood
+            </div>
+
+            <div id="dominant-mood">
+                --
+            </div>
+
+            <div class="metric-title">
+                Mood Stability
+            </div>
+
+            <div id="stability">
+                --
+            </div>
+
+            <div class="metric-title">
+                Detections Processed
+            </div>
+
+            <div id="count">
+                0
+            </div>
+
+            <div class="metric-title">
+                Last Updated
+            </div>
+
+            <div id="timestamp">
+                --
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h2>🟢 System Status</h2>
+
+            <p>Camera Active</p>
+
+            <p>Face Detected</p>
+
+            <p>AI Analysis Running</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
